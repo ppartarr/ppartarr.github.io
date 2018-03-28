@@ -20,4 +20,14 @@
   <link rel="manifest" href="{{ "/manifest.json" | prepend: site.baseurl }}">
   <link rel="mask-icon" href="{{ "safari-pinned-tab.svg" color="#5bbad5"> | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108015659-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108015659-2');
+  </script>
 </head>
