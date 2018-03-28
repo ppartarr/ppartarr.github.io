@@ -13,6 +13,6 @@ github_username:  ppartarr
 
 # Google-analytics
 google-analytics:
-  id: ""
+  id: "108015659"
 
 exclude: ['package.json', 'src' , 'node_modules']
