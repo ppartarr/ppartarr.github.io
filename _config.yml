@@ -1,5 +1,5 @@
 # Site settings
-title: Philippe's Website
+title: Philippe Partarrieu
 description: Personal website for getting to know me
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 url: "https://partarrieu.me"
@@ -10,6 +10,19 @@ user_description: Hi, I'm a student Computer Scientist based in Glasgow, UK. I w
 user_title: Computer Scientist
 email: philippe@partarrieu.me
 github_username:  ppartarr
+
+# Settings for the porfolio section
+portfolio_heading: Portfolio
+
+project_one: CaseBlocks
+project_one_description: Caseblocks helps other companies automate processes. During my internship in 2017, I embedded the Ace code editor to allow customers make changes to their process configuration. I also helped design and implement a questionnaire workflow using ReactJS and SASS, as well as add features clarifying Service Level Agreements.
+project_one_url: https://www.caseblocks.com
+project_one_icon: location_on 
+
+project_two: Dracula for Facebook Messenger
+project_two_description: "I hate light themes. I hate openning up a new tab and being blinded by an overwhelmingly bright page. This is why I've made a dark theme for messenger using one of my favourite color schemes: Dracula."
+project_two_url: https://github.com/ppartarr/dracula-messenger
+project_two_icon: photo_camera
 
 # Google-analytics
 google-analytics:

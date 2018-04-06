@@ -18,3 +18,4 @@ This theme was partially designed with inspiration from these fine folks
 - [Nathan Randecker](https://github.com/nrandecker/particle)
 - [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
 - [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)
+- [James Hamann](https://github.com/jameshamann)
