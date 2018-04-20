@@ -2,7 +2,6 @@
 title: Philippe Partarrieu
 description: Personal website for getting to know me
 keywords: philippe, partarrieu, computer science, personal website
-# baseurl: "/particle" # the subpath of your site, e.g. /blog
 url: "https://partarrieu.me"
 
 # User settings
@@ -37,6 +36,6 @@ project_two_icon: photo_camera
 
 # Google-analytics
 google-analytics:
-  id: "108015659"
+  id: "UA-108015659-2"
 
 exclude: ['package.json', 'src' , 'node_modules']
