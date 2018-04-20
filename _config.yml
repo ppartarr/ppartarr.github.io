@@ -1,6 +1,7 @@
 # Site settings
 title: Philippe Partarrieu
 description: Personal website for getting to know me
+keywords: philippe, partarrieu, computer science, personal website
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 url: "https://partarrieu.me"
 

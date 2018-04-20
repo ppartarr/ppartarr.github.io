@@ -2,16 +2,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
   <meta name="HandheldFriendly" content="true">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="I do coding and other stuff">
+  <meta name="author" contant="{{site.author}}">
+  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="keywords" content="{{site.keywords}}">
   <base href="partarrieu.me">
-  <title>Philippe Partarrieu</title>
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="76x76"  href="{{ "/assets/img/favicon/apple-touch-icon.png" | prepend: site.baseurl }}">
