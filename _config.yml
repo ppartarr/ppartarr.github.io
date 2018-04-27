@@ -28,9 +28,9 @@ project_one_icon: location_on
 
 project_two: Dracula for Facebook Messenger
 project_two_description: >-
-  "I hate light themes. 
+  I hate light themes. 
   I hate openning up a new tab and being blinded by an overwhelmingly bright page. 
-  This is why I've made a dark theme for messenger using one of my favourite color schemes: Dracula."
+  This is why I've made a dark theme for messenger using one of my favourite color schemes: Dracula.
 project_two_url: https://github.com/ppartarr/dracula-messenger
 project_two_icon: photo_camera
 
