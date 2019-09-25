@@ -24,6 +24,11 @@ body {
   display: none;
 }
 
+.invisible-border {
+  @extend .border;
+  border: 0.4rem solid $background-color;
+}
+
 /**
  * Site header
  */
@@ -134,6 +139,12 @@ body {
   }
 }
 
+/**
+ * Post
+ */
+.post {
+  overflow-y: auto;
+}
 
 
 /**

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+    <div class="invisible-border">
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+
+            <div class="gallery">
+
+                {% for file in site.static_files %}
+                    {% if file.extname == ".jpg" %}
+                            <figure class="photo">
+                                <img src="{{file.path}}" />
+                            </figure>
+                    {% endif %}
+                {% endfor %}
+
+            </div>
+
+      </div>
+    </main>
+
+    </div>
+    
+  </body>
+
+</html>

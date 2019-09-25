@@ -12,7 +12,7 @@ I did this on a single SSD Dell XPS 15 with windows 10 preinstalled. It's obviou
 To get started you will need:
   * a stable internet connection
   * a USB key with 1GB storage
-  * a cup of coffee & and a can do attitude
+  * a cup of coffee ☕ & and a can do attitude
 
 ## Warmup
 
@@ -230,7 +230,7 @@ $ pacman -Syyu wpa_supplicant wifi-menu dialog
 ```
 
 ### Finally we got here
-If you got to this stage without any errors, crashes or additional reboots - [please let me know](mailto:philippe@partarrieu.me) because you're probably the one we've all been waiting for and I could use you to debug some C. I hope this guide helped you, give me a thumbs up if you liked it and don't forget to subscribe to my youtube channel /s
+If you got to this stage without any errors, crashes or additional reboots - [please let me know](mailto:philippe@partarrieu.me) because you're probably [the one](https://matrix.fandom.com/wiki/The_One) and I could use your help with some C debugging.
 
 ``` bash
 $ exit

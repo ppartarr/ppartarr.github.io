@@ -6,10 +6,11 @@ permalink: /about/
 
 # Hello there,
 
-I'm a computer scientist living in Amsterdam currently working part-time as a freelance software developer. I also study [security & network engineering](https://www.os3.nl/) part-time at the [University of Amsterdam](https://www.uva.nl/en) and I'm always looking for new challenges to tackle so if you have some work for me don't hesitate to [send me an email](mailto:philippe@partarrieu.me).
+I'm a computer scientist living in Amsterdam currently studying [security & network engineering](https://www.os3.nl/) part-time at the [University of Amsterdam](https://www.uva.nl/en). I work part-time as a freelance software developer and I'm always looking for new challenges so if you have some work don't hesitate to [send me an email](mailto:philippe@partarrieu.me) so we can have a chat.
 
-I specialise in red teaming but also occasionally work as a software engineer and do a little web design. If you're curious about my experience please [have a look at my cv](https://docs.google.com/document/d/1QZjGPnyJw-DlHK1-bSVfyykKAEeIrz5vhBF9oXiFW6c/edit?usp=sharing).
+I specialise in DevOps but always enjoy doing some web design in my spare time. 
+If you're curious about my experience you can visit my [github](https://github.com/partarr).
 
-
+This website is powered by [jekyll](https://jekyllrb.com/) and built with <span style="font-size:1.5em">❤</span> and <span style="font-size:1.5em">☕</span>
 
 

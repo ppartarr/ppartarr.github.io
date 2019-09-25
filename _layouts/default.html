@@ -14,7 +14,9 @@
       </div>
     </main>
 
-    {%- include footer.html -%}
+    {%- if page.isHome -%}
+      {%- include footer.html -%}
+    {%- endif -%}
 
     </div>
     

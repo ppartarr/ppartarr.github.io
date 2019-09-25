@@ -14,12 +14,6 @@ To modify the default template (minima), run `bundle show minima` then copy the 
 If you change any default values in `_layouts` you must run `bundle update`
 
 ## TODO
-
-[x] robots.txt
-[x] favicon
-[x] colors
-[x] about section
-[x] add CV
-[ ] photography section
-[x] blog
- 
+[ ] add scrollbar to blog posts
+[ ] add pictures
+[ ] write more blogposts
