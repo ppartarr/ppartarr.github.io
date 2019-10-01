@@ -1,5 +1,7 @@
 # Welcome to my website's repository
 
+![screenshot](./assets/images/chromium.png)
+
 ## Prerequisites
 
 In order to run this project you will need:
