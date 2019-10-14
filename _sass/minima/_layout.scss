@@ -75,7 +75,7 @@ body {
   .page-link {
     color: $primary-color;
     line-height: $base-line-height;
-    @include relative-font-size(1.5);
+    @include relative-font-size(1.2);
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
@@ -127,7 +127,6 @@ body {
 
     .page-link {
       flex-grow: 1;
-      float: right;
       display: block;
       padding: 5px 10px;
 
@@ -233,11 +232,16 @@ body {
 .centered {
   margin: 0;
   position: absolute;
-  top: 45%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 30%;
 }
+
+@include media-query($on-palm) {
+  .centered {
+    left: 0%;
+  }
+}
+
 
 /**
 * Page content
