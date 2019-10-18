@@ -1,23 +1,25 @@
 ---
 layout: post
-title:  "i3 & arch installation and configuration"
+title:  "i3 installation & arch configuration"
 date:   2019-10-19 00:59:010 +0200
 categories: blog
 ---
 
-SO you've spent a couple of hours installing arch and you finally have access to a shell. What more could you want? Probably a [desktop environment](https://wiki.archlinux.org/index.php/Desktop_environment) like gnome or cinnamon so go have a look at those. If you want to try something new and exciting, why not go for a [window manager](https://wiki.archlinux.org/index.php/Window_manager)? It's much more efficient in terms of system resources, and once you've spent ~~some time~~ hours customising your configuration files you'll have a desktop worthy of [unixporn](https://www.reddit.com/r/unixporn/). So what are you waiting for? Go have a look at [i3](https://i3wm.org/) for a bit more info about what's in it for you and come back when you're convinced this is the right thing for you do to (if you're reading this blogpost it probably is).
+So you've spent a couple of hours installing arch and you finally have access to a shell. What more could you want? Probably a [desktop environment](https://wiki.archlinux.org/index.php/Desktop_environment) like gnome or cinnamon so go have a look at those. If you want to try something new and exciting, why not go for a [window manager](https://wiki.archlinux.org/index.php/Window_manager)? It's much more efficient in terms of system resources, and once you've spent ~~some time~~ hours customising your configuration files you'll have a desktop worthy of [unixporn](https://www.reddit.com/r/unixporn/). So what are you waiting for? Go have a look at [i3](https://i3wm.org/) for a bit more info about and come back when you're convinced this is the right thing for you do to.
 
 If you're coming into i3 & arch for the first time, a lot of these tools are going to sound new. Once again, if you don't know what the tool is used for, don't bother installing it. You probably won't use it and it'll end up being bloatware.
 
 So what are we going to install? Starting from the ground up, we have:
 * A tilling windows manager: [i3-gaps](https://github.com/Airblader/i3)
-* Our terminal emulator: [rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html)
-* Our shell: [zsh](https://www.zsh.org/)
+* Terminal emulator: [rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html)
+* Shell: [zsh](https://www.zsh.org/)
 
 And lots, lots more stuff. If you're not familiar with the package name, do a search beforehand because you might not need it and keep in mind that this tutorial is highly biased: **I use this setup myself and hand-picked all of these tools**
 
 This is what my desktop looks like: 
-![screenshot](./assets/images/screenshot.png)
+
+
+![screenshot](/assets/images/screenshot.png)
 
 Okay so with that out of the way, let's start with the basics:
 
@@ -112,6 +114,7 @@ $ chmod +x symlink && ./symlink
 Here I install the stuff I usually like to code in:
 * [python](https://www.python.org/)
 * [haskell](https://www.haskell.org)
+
 ```bash
 $ sudo pacman -S python python-pip
 $ curl -sSL https://get.haskellstack.org/ | sh
@@ -158,7 +161,7 @@ aEsThEtIcS
 # To color pacman's ouput uncomment: Color
 $ sudo vim /etc/pacman.conf
 $ yay -S neofetch
-$ sudo pacman -S deepin-screenshot
+$ sudo pacman -S flameshot
 ```
 
 ## Links & credits
