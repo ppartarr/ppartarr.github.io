@@ -15,4 +15,4 @@ Use `bundle exec jekyll serve` to run the site locally.
 
 To modify the default [minima](https://github.com/jekyll/minima) template, run `bundle show minima` then copy the file you want to modify to your directory i.e. `cp ~/.rvm/gems/ruby-2.6.4/gems/minima-2.5.1/_includes/footer.html _includes`
 
-If you change any default values in **_layouts** you must run `bundle update`
+If you change any default values in **_layouts** you must run `bundle update` 
