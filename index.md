@@ -18,7 +18,7 @@ isHome: true
         smartBackspace: true,
         typeSpeed: 30,
         backSpeed: 20,
-        backDelay: 2500,
+        backDelay: 1500,
         loop: true
       });
   </script>

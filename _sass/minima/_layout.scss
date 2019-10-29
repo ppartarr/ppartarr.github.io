@@ -18,6 +18,11 @@ body {
   padding: 1rem;
   position: fixed sticky;
   overflow-y: auto;
+
+  @include media-query($on-palm) {
+    border: 0;
+    margin: 0;
+  }
 }
 
 .border::-webkit-scrollbar {
@@ -234,19 +239,12 @@ body {
   position: absolute;
   top: 45%;
   left: 30%;
-  margin-right: -50%;
   transform: translate(0, -50%);
-}
 
-@include media-query($on-palm) {
-  .centered {
-    top: 45%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+  @include media-query($on-palm) {
+    left: 20%;
   }
 }
-
 
 /**
 * Page content
