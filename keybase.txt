@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/ppartarr
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://partarrieu.me
+  * I am ppartarr (https://keybase.io/ppartarr) on keybase.
+  * I have a public key with fingerprint 42ED 2574 0C90 52B7 4E89  9CC3 D803 F419 9AFF 78A3
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101ecf2113d474a89f28eda113d7faf28f34e63c1e252d9f4b1df484bd84c19a84e0a",
+      "fingerprint": "42ed25740c9052b74e899cc3d803f4199aff78a3",
+      "host": "keybase.io",
+      "key_id": "d803f4199aff78a3",
+      "kid": "0101ecf2113d474a89f28eda113d7faf28f34e63c1e252d9f4b1df484bd84c19a84e0a",
+      "uid": "b6e6b8ed47b3e4cad2f55ba3da3aa919",
+      "username": "ppartarr"
+    },
+    "service": {
+      "hostname": "partarrieu.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1572645501,
+  "expire_in": 157680000,
+  "prev": "8aadf1b2fdf952e5250ac64ac1e6df2e6bbc2ddbca47dc5f12bed979d58adf7f",
+  "seqno": 3,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.3
+Comment: https://keybase.io/crypto
+
+yMIhAnicrVJZSFRRGB4zNadNkoo2ohuV1Vh3OXcbKIs2IQkqJINsOOt4M+fe7tyZ
+nMpWW9AIwYgIKcoWzShCiJSCColC8iEJKsi2h4x22imwc63eeuy8HL7/fN93vv/n
+7xiaHgim3U//NOZIX2VjWuf1w4lA6ZWzVZsFZJOUEN4slNP+i64nNO5Fyi0ihAVR
+EiWKmSxJCgE6gIbJZIMS6GOdQQ6YAqimYInKqkxMBpBEGDAAIgbAkgkNQEUohARm
+xaLUdVwr5nFbIFMiqzoQsSmqMtIBNUwTY4UYosKAZJqQMd2ACheW2XFfwcMhGKez
+LJvXOIj0x/sH/z/nTvTbIY1qiOuBjhQKMCQyU1UEFQIVCE3J9Ilx6sZgBeVsx4Gu
+B11XqAoJvJq0MPUH63fyl/GbYNHELI5DguPano3t9fypzPOceNiXeinH526kKPLH
+JYKsGOGD5IokdeOWHRPCEmdiz/JtJVWXNaCqohQSaKVjuTRixfrLmiHy4/9Dk9zS
+gJAwCcmMMFOVqSqrIsQagHwaGmEy7xVhmRCEIdAJVpkkI0pM3SSqwYU6E/y+NsRs
+IazwmDDKLeNWNAa9hEuFqhvX1gwMpAUDmRkD/AULBLNz/q5dSdGgQMNVZfqlBc+a
+2rtT+55+VvuKz/d86WtY9WDcofyp26zWixWZu3aPfFs3sunJNDZ2/IeB74YoObe7
+o8eH9e45oB/7Ku4f93L+hLz8Hnv2udeLh2oPKodPGl2LXm3a/rx30d2bGT3RuU3o
+Rll1+syjFTXdF0ne3gt1P5euy+rtgK17CouSZYHVjW+WF514MeVReePO9zMKU8ML
+V9YUPMenb7cf/F5rXq7PzX54ZtSW3LaJ409lB7JWNOv5C9sWF1d3TPm2pOT+V2TP
+gTvE7T1dWWszm+pykJbbfLJUH9P1Zdmtqpb0rYPr8Q/nllPfcieR935p3bzJ3uF7
+tPMx/jH5UcGIAx+LCoK/AEAYQsc=
+=QTCT
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ppartarr
+
+==================================================================
