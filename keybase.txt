@@ -21,6 +21,16 @@ To do so, I am signing this object:
       "uid": "b6e6b8ed47b3e4cad2f55ba3da3aa919",
       "username": "ppartarr"
     },
+    "merkle_root": {
+      "ctime": 1572787872,
+      "hash_meta": "bdbe2223f03339424fc568214ae77c588588fc50bb9b3a0973f389a9b207389e",
+      "seqno": 8662105
+    },
+    "revoke": {
+      "sig_ids": [
+        "a0bc0b22af29902a6db71015135f72c432bf6ff559a96820528ad786d074d0540f"
+      ]
+    },
     "service": {
       "hostname": "partarrieu.me",
       "protocol": "https:"
@@ -28,10 +38,10 @@ To do so, I am signing this object:
     "type": "web_service_binding",
     "version": 1
   },
-  "ctime": 1572645501,
+  "ctime": 1572787872,
   "expire_in": 157680000,
-  "prev": "8aadf1b2fdf952e5250ac64ac1e6df2e6bbc2ddbca47dc5f12bed979d58adf7f",
-  "seqno": 3,
+  "prev": "512c04605d7c88f389be791639034c1c590c5413cfd5d23f9a077d3914abf029",
+  "seqno": 5,
   "tag": "signature"
 }
 
@@ -41,23 +51,26 @@ which yields the signature:
 Version: Keybase OpenPGP v2.1.3
 Comment: https://keybase.io/crypto
 
-yMIhAnicrVJZSFRRGB4zNadNkoo2ohuV1Vh3OXcbKIs2IQkqJINsOOt4M+fe7tyZ
-nMpWW9AIwYgIKcoWzShCiJSCColC8iEJKsi2h4x22imwc63eeuy8HL7/fN93vv/n
-7xiaHgim3U//NOZIX2VjWuf1w4lA6ZWzVZsFZJOUEN4slNP+i64nNO5Fyi0ihAVR
-EiWKmSxJCgE6gIbJZIMS6GOdQQ6YAqimYInKqkxMBpBEGDAAIgbAkgkNQEUohARm
-xaLUdVwr5nFbIFMiqzoQsSmqMtIBNUwTY4UYosKAZJqQMd2ACheW2XFfwcMhGKez
-LJvXOIj0x/sH/z/nTvTbIY1qiOuBjhQKMCQyU1UEFQIVCE3J9Ilx6sZgBeVsx4Gu
-B11XqAoJvJq0MPUH63fyl/GbYNHELI5DguPano3t9fypzPOceNiXeinH526kKPLH
-JYKsGOGD5IokdeOWHRPCEmdiz/JtJVWXNaCqohQSaKVjuTRixfrLmiHy4/9Dk9zS
-gJAwCcmMMFOVqSqrIsQagHwaGmEy7xVhmRCEIdAJVpkkI0pM3SSqwYU6E/y+NsRs
-IazwmDDKLeNWNAa9hEuFqhvX1gwMpAUDmRkD/AULBLNz/q5dSdGgQMNVZfqlBc+a
-2rtT+55+VvuKz/d86WtY9WDcofyp26zWixWZu3aPfFs3sunJNDZ2/IeB74YoObe7
-o8eH9e45oB/7Ku4f93L+hLz8Hnv2udeLh2oPKodPGl2LXm3a/rx30d2bGT3RuU3o
-Rll1+syjFTXdF0ne3gt1P5euy+rtgK17CouSZYHVjW+WF514MeVReePO9zMKU8ML
-V9YUPMenb7cf/F5rXq7PzX54ZtSW3LaJ409lB7JWNOv5C9sWF1d3TPm2pOT+V2TP
-gTvE7T1dWWszm+pykJbbfLJUH9P1Zdmtqpb0rYPr8Q/nllPfcieR935p3bzJ3uF7
-tPMx/jH5UcGIAx+LCoK/AEAYQsc=
-=QTCT
+yMK0AnicrZNdbBVFFMdvKfhRgm2REAumIVsligRn52Nn596QNCiNRA3RBxtq6+18
+3m7a7t7ubm9p2vugBkwIFtMEtWKUSDBgH31Ck6bBJgSaoBA/Y3hCMPhioBVrROrs
+VeILj+5usjsz5/zP//xmZ25Nfa6h7vv6xZb3lvceq5s/XRnO9cx8e3TMEZEadfJj
+Tr+uvfSA0kla7A+Uk3eAC1wtDXRdpDDF3GcG+lrxbEwNtwODsPaQdDUkUDGDhasM
+9rFQPpYu4z7WgDtbHROEJR2X4yBMrSyGWkFCMZAMECgo1j5jUiLlA2Swyxg3hvoc
+2cS+KMkyrDnBE70tiOycHRRr9u4S/z/7Hq7JCU97wuZjKpDGkitoCBEcKY44Zy7L
+AhMdh3xQ2+hymccpj2OnutUZ1HH/gC7GUZRmcGUaZCEuoZD69oa2QZ70FQd1yrM6
+SmgIITIAIcQwxEYSz4cu5ppSSXzfPnYKCMEE4oBRZJDPOBMQUPuhrY9ED4WRk/c9
+D7qAWAexrkT9OiueBCWLLXHyLzscCAkEhJYEYwByTwlqkREXEUOhxAgK4xnbpBW3
+Buwm+VxR31OAYgUIBsbpqWbF4koga+LZPt3p/5/2Az28bTCzVI6jNJLRgF3qS9Ny
+ks/ApKPlLHZEi+K/KkURhMr+JjajouMkiEILykbehZneWw5iXQzC2rTnA3tldXTF
+ShIXSoA9QBSVFpflIjRlrocYQHZvJWFAEuwiaRRRljXjgFKFmKUsDIDsP4jE2uQl
+K2nJhTwdjrVTPT3bvTJX15C7Z9WK7PjkGu5vunOorvxwX27mROvi9unD7T81L/Qe
+SHIdv23cVZj8aOmv2a43G1858uQnG6bZL6ud5bFm8evIjj25yYVH2jYvtDVemPzK
+/fLVuZPPTFVPfLjqZM/KFmfnlbkVpUtr5/e3vFWduvnZ0uUL5+rb/xia3Nf13bO3
+Pt28brr38Py9a2cnZGfdHtKWoNeuFTo2kre/0dX2F499kZs+9/7lR7eML3c///jE
+oYPOn107RrePr59IOudbhxbPN98sNNKOcGn9x6UfN/x88epDrU+d3fTwre7fz7Ld
+zzUdH7l9bSBpf+L6rtWbDp46tP/pd5OmiweuwsILHzR9vqb7wcI7t9dNXTJHzrz0
+9QPuvpnezvGdZ96Q3o1Trz/2N0XHfYk=
+=bjuu
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
@@ -66,3 +79,4 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/ppartarr
 
 ==================================================================
+
