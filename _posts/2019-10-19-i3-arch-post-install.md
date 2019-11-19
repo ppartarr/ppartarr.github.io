@@ -16,69 +16,79 @@ So what are we going to install? Starting from the ground up, we have:
 
 And lots, lots more stuff. As a rule of thumb: if you're not familiar with a package name and you're about to install it, do an online search beforehand. Please keep in mind that this tutorial is highly biased: **This is my setup and I hand-picked all of these tools**
 
-Here's what you can expect your desktop to look like if you follow this tutorial:
+Here's what you can expect your desktop to look like if you follow this tutorial (you can customise everything from the background picture, the transparency, the text colour scheme, to the status bar and much much more):
 
 ![screenshot](/assets/images/screenshot.png)
 
 Okay so with that out of the way, let's start with the basics:
 
 ## User configuration
-Pick a username and replace $USERNAME with it
+Pick a username and create a user (replace the $USERNAME with the chosen username)
 ```bash
 # create user and add him to the wheel group
-$ useradd -m -g users -G wheel,audio,video $USERNAME
+useradd -m -g users -G wheel,audio,video $USERNAME
 
 # set your password
-$ passwd $USERNAME
+passwd $USERNAME
+
+# switch to your newly created user
+su $USERNAME
 ```
 
-### Home direcories
-I like having the typical Documents, Downloads etc folders because it allows me to synchorize and backup my laptop pretty easily.
-``` bash
-$ sudo pacman -S xdg-user-dirs
-$ xdg-user-dirs-update
-```
-
-## Allow users to sudo
+## Allow user to sudo
+Like Ubuntu which has a sudo group, arch has a wheel group for admin tasks.
 ```bash
-# open a file and comment out to allow all users to sudo: %whell ALL=(ALL) ALL
-$ visudo
+# comment out the following line to allow users in the wheel group to sudo
+# %whell ALL=(ALL) ALL
+visudo
+```
+
+### Home directories
+If you `ls` in your home directory, you will realise that there are no Document, Picture, Download etc directories. I like having these since they allow me to backup my laptop and synchronise with other machines pretty easily. Let's install them!
+``` bash
+sudo pacman -S xdg-user-dirs
+xdg-user-dirs-update
 ```
 
 ## Configure git
-I've configured a lot of machines with git in the past so I've written a little helper script to do the work for you. Get the script from [here](https://gist.github.com/ppartarr/72964efb5e60a3cb11774a32ddd0e779) and run
+I've configured a lot of machines with git in the past so I've written a little helper script to do the work. Get the script from [here](https://gist.github.com/ppartarr/72964efb5e60a3cb11774a32ddd0e779) and run
 ```bash
-$ chmod +x git.sh
+chmod +x git.sh
 # I like signing my git commits but you can set -gpg to false if you don't want to bother
-$ ./git.sh -e $EMAIL -n $FULL_NAME -g true
+./git.sh -e $EMAIL -n $FULL_NAME -g true
 ```
 
-## Install and Arch User Repository (AUR) package manager
-I use [yay](https://github.com/Jguer/yay) as a AUR helper and it's safe to say it's the best one out there. We're going to build it from source. I use a **src** directory in my home for all my source folders (duh!). Feel free to name this directory whatever you want.
+## Install an Arch User Repository (AUR) package manager
+I use [yay](https://github.com/Jguer/yay) as a AUR helper and it's safe to say it's the best one out there. We're going to build it from source. I have a **src** directory in my home for all my source folders. Feel free to name this directory whatever you want.
 ```bash
-$ mkdir src && cd src
-$ git clone https://aur.archlinux.org/yay.git
-$ cd yay
-$ makepkg -si
+mkdir src && cd src
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 ```
 
-*Note: never, I mean NEVER run `sudo yay`. By definition yay packages come from the user repository and they could be unsecure. [1]*
+*Note: never, I mean NEVER run `sudo yay`. By definition yay packages come from the user repository and they could be unsafe. [1]*
 
 ## i3-gaps installation
-I prefer the aesthetics of [i3 gaps](https://github.com/Airblader/i3) over vanilla i3
+I prefer the aesthetics of [i3 gaps](https://github.com/Airblader/i3) over the regular i3. There is another fork called i3-gaps-rounded which adds rounded cornes to your windows.
+If I had to argue why tiling window managers are great:
+1. Keybaord driven workflow. Every aspect of your environment is configurable with keyboard shortcuts, from resizing windows to launching apps
+2. Screen usage. Especially important if you have a 13 or 15 inch laptop screen. i3 allows you to switch layouts without worrying about overlapping windows
+3. Performance. i3 is written in C. i3 is a window manager as opposed to desktop environment and therefore doesn't have pre-installed tools for customization (no background picture, customizable menus or desktop notifications)
+
 ```bash
 # install xorg packages
-$ sudo pacman -S xorg-server xorg-apps xorg-xinit xorg-twm
+sudo pacman -S xorg-server xorg-apps xorg-xinit xorg-twm
 
 # install i3-gaps
-$ yay -S i3-gaps
+yay -S i3-gaps
 
 # replace i3-sensible-terminal with urxvt
-$ vim ~/.config/i3/config
+vim ~/.config/i3/config
 
 # install display manager
-$ sudo pacman -S lightdm
-$ yay -S lightdm-mini-greeter
+sudo pacman -S lightdm
+yay -S lightdm-mini-greeter
 ```
 
 ## Some usefull tools
@@ -94,8 +104,8 @@ So here's a quick breakdown of the tools we're about to install:
 
 ```bash
 # completely arbitrary list of stuff I use
-$ sudo pacman -S vim unzip tmux htop git zsh firefox chromium vlc libsecret gnome-keyring libgnome-keyring xclip zsh feh urxvt curl compton
-$ yay -S mailspring rofi i3lock-color polybar
+sudo pacman -S vim unzip tmux htop git zsh firefox chromium vlc libsecret gnome-keyring libgnome-keyring xclip zsh feh urxvt curl compton
+yay -S mailspring rofi i3lock-color polybar
 ```
 
 ### Dotfiles
@@ -104,9 +114,9 @@ You'll have noticed that we are using a lot of different tools and that all of t
 Since you've made it this far and you've installed a bunch of the same tools I use, you mig want to check out my dotfiles as well. Have a look over [here](https://github.com/ppartarr/dotfiles) for more details
 
 ```bash
-$ git clone git@github.com:ppartarr/dotfiles.git ~/.dotfiles
-$ cd ~/.dotfiles
-$ chmod +x symlink && ./symlink
+git clone git@github.com:ppartarr/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+chmod +x symlink && ./symlink
 ```
 
 ### Programming languages
@@ -115,52 +125,51 @@ Here I install the stuff I usually like to code in:
 * [haskell](https://www.haskell.org)
 
 ```bash
-$ sudo pacman -S python python-pip
-$ curl -sSL https://get.haskellstack.org/ | sh
+sudo pacman -S python python-pip
+curl -sSL https://get.haskellstack.org/ | sh
 ```
 
 ### Oh my zsh
 My favourite shell is [zsh](https://www.zsh.org/) mostly for the [ohmyzsh](https://ohmyz.sh/) framework.
 ```bash
 # install oh-my-zsh
-$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # install plugins
-$ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # clone my zsh theme from gist
-$ git clone git@gist.github.com:6eeb9585dcbc3c6a8db79982ec8c21ad.git ~/.oh-my-zsh/custom/themes/haskell.zsh-theme
+git clone git@gist.github.com:6eeb9585dcbc3c6a8db79982ec8c21ad.git ~/.oh-my-zsh/custom/themes/haskell.zsh-theme
 ```
 
 ## Fonts
 ```bash
-$ sudo pacman -S noto-fonts noto-fonts-emoji
+sudo pacman -S noto-fonts noto-fonts-emoji
 ```
 
 ## Audio
 ```bash
-$ sudo pacman -S alsa-utils alsa-plugins alsa-lib pavucontrol
+sudo pacman -S alsa-utils alsa-plugins alsa-lib pavucontrol
 ```
 
 ## Managing USB devices
 As you use arch more and more you might realise that mounting USB sticks is a pain. Here's a tool that will automatically mount plugged in USB devices for you.
 ```bash
-$ yay -S udisks2
+yay -S udisks2
 ```
 
 ## Volume control
 ```bash
-$ sudo pacman -S xbindkeys
+sudo pacman -S xbindkeys
 ```
 
 ## Fluff
-aEsThEtIcS
 ```bash
 # To color pacman's ouput uncomment: Color
-$ sudo vim /etc/pacman.conf
-$ yay -S neofetch
-$ sudo pacman -S flameshot
+sudo vim /etc/pacman.conf
+yay -S neofetch
+sudo pacman -S flameshot
 ```
 
 ## Links & credits
