@@ -5,7 +5,7 @@ date:   2019-11-19 21:18:09 +0200
 categories: blog
 ---
 
-This post is the first in of a series in which I attempt to solve Hack The Box challenges and track my progress. The idea is to note down my thought process in solving the challenges, including my failed attemps. Beware that these blog posts will contain spoilers to the challenges so be sure to attempt to solve them yourself before you read on.
+This post is the first in of a series in which I attempt to solve [Hack The Box](https://www.hackthebox.eu/) challenges and track my progress. The idea is to note down my thought process in solving the challenges, including my failed attemps. Beware that these blog posts will contain spoilers to the challenges so be sure to attempt to solve them yourself before you read on.
 
 So without further ado, here is the solution to the invite challenge:
 
@@ -13,7 +13,7 @@ I thought the challenge was going to be trivial and I fully expected the invite 
 
 ![hidden input](/assets/images/hack-the-box-invite.png)
 
-I assumed that this token has to be sent to an API and exchanged for a code, so I start looking at the HTML form. I decided to check the debugger view of the firefox developer tools and in there I find **inviteapi.min.js** - looks like I found what I'm looking for. The code is obfuscated, so I copy the javascript and submit it to the first javascript deobfuscation website I can find, which returns the following code:
+I assumed that this token has to be sent to an API and exchanged for a code, so I started looking at the HTML form. I decided to check the debugger view of the firefox developer tools and in there I find **inviteapi.min.js** - looks like I found what I'm looking for. The code is obfuscated, so I copy the javascript and submit it to the first javascript deobfuscation website I can find, which returns the following code:
 
 ```javascript
 'use strict';
@@ -57,7 +57,7 @@ function makeInviteCode() {
 ;
 ```
 
-The `makeInviteCode` is wthe function I was looking for. Now let's try and send a POST request using curl to that endpoint
+The `makeInviteCode` is the function I'm interested in. Now let's try and send a POST request using curl to that endpoint
 ```bash
 $ curl -X POST https://www.hackthebox.eu/api/invite/how/to/generate -d "UQmSFCHauxO4Fb16mdsuWYoM0Avob3S6BdP48HbE"
 {"success":1,"data":{"data":"SW4gb3JkZXIgdG8gZ2VuZXJhdGUgdGhlIGludml0ZSBjb2RlLCBtYWtlIGEgUE9TVCByZXF1ZXN0IHRvIC9hcGkvaW52aXRlL2dlbmVyYXRl","enctype":"BASE64"},"0":200}%
@@ -75,7 +75,7 @@ $ curl -X POST https://www.hackthebox.eu/api/invite/generate
 {"success":1,"data":{"code":"QldORk4tWEpZVlktSUJHWE0tUkxCRFEtUUhGWkU=","format":"encoded"},"0":200}%
 ```
 
-Ah ha, there is the code. I copy paste it into the input field. And I get an error. I look at the code again and see that the format is encoded, so I decode it using base64 again, paste the code into the input field and carry on to create my account!
+Ah ha, there is the code. I copy paste it into the input field. And I get an error. I look at the curl response again and see that the format is encoded, so I decode it using base64 again, paste the code into the input field and carry on to create my account!
 
 ```bash
 $ curl -X POST https://www.hackthebox.eu/api/invite/generate
