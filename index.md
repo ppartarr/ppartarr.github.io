@@ -14,10 +14,10 @@ isHome: true
 
   <script>
       var typed = new Typed('#typed', {
-        strings: ['I build websites', 'I secure websites', 'I hack websites'],
+        strings: ["Hi, I'm a software engineer", "Hire me to translate your ideas into code"],
         smartBackspace: true,
-        typeSpeed: 30,
-        backSpeed: 20,
+        typeSpeed: 50,
+        backSpeed: 30,
         backDelay: 1500,
         loop: true
       });

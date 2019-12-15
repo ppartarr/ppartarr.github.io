@@ -222,7 +222,7 @@ body {
 }
 
 .large-text {
-  @include relative-font-size(8);
+  @include relative-font-size(4);
 }
 
 @include media-query($on-palm) {
@@ -238,7 +238,7 @@ body {
   margin: 0;
   position: absolute;
   top: 45%;
-  left: 30%;
+  left: 20%;
   transform: translate(0, -50%);
 
   @include media-query($on-palm) {
