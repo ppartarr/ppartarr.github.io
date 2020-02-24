@@ -10,7 +10,7 @@ body {
  * Border
  */
 .border {
-  border: 0.4rem solid $primary-color;
+  border: 0.5rem solid $primary-color;
   margin: 1.5rem auto;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -223,11 +223,12 @@ body {
 
 .large-text {
   @include relative-font-size(4);
+  font-weight: 500;
 }
 
 @include media-query($on-palm) {
   .large-text {
-    @include relative-font-size(2);
+    @include relative-font-size(1);
   }
 }
 

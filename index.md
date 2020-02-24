@@ -14,7 +14,7 @@ isHome: true
 
   <script>
       var typed = new Typed('#typed', {
-        strings: ["Hi, I'm a software engineer", "Hire me to translate your ideas into code"],
+        strings: ["Hi, I'm a software engineer 👋", "Hire me to translate your ideas into code"],
         smartBackspace: true,
         typeSpeed: 50,
         backSpeed: 30,
