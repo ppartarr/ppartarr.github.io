@@ -241,11 +241,12 @@ body {
   top: 45%;
   left: 20%;
   transform: translate(0, -50%);
-  max-width: 60%;
+  max-width: 70%;
   max-block-size: 1em;
 
   @include media-query($on-palm) {
     left: 20%;
+    max-width: 60%;
   }
 }
 
