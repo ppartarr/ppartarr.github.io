@@ -143,7 +143,11 @@ $ pacstrap /mnt base
 ```
 
 ### Generate your fstab file so that partitions are mounted when your reboot
+The fstab (short for filesystems table) is used to list disk partitions or various block devices and specify how they should be mounted into the filesystem.
 ``` bash
+# generate the fstab file
+$ genfstab -U /mnt >> /mnt/etc/fstab
+
 # verify that /, /boot, /boot/efi, and swap are here
 $ cat /mnt/etc/fstab
 # /dev/nvme0n1p9
