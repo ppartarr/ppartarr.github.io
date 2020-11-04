@@ -139,7 +139,7 @@ $ mount /dev/nvme0n1p1 /mnt/boot/efi
 ### Install the base arch packages
 ``` bash
 # optionally add base-devel at the end of the following command for development tools
-$ pacstrap /mnt base
+$ pacstrap /mnt base linux linux-firmware
 ```
 
 ### Generate your fstab file so that partitions are mounted when your reboot
