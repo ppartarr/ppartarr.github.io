@@ -18,7 +18,7 @@ Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
 Disklabel type: gpt
-Disk identifier: 588E8547-C15A-410D-9948-67F5F9FE4E9F
+Disk identifier: $REMOVED_DISK_IDENTIFIER
 
 Device     Start        End    Sectors  Size Type
 /dev/sda1   2048 3906961407 3906959360  1.8T Microsoft basic data
