@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Who am I? # title of the page
+title: who am I? # title of the page
 permalink: /about/
 ---
 
