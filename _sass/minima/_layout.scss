@@ -163,7 +163,7 @@ body {
   line-height: 1.4;
 
   @include media-query($on-palm) {
-    margin: 15rem;
+    margin: 0;
   }
 }
 
