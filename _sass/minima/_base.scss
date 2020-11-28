@@ -110,14 +110,8 @@ a {
     text-decoration: underline;
   }
 
-  &:visited {
-    color: darken($brand-color, 15%);
-  }
-
   &:hover {
-    color: $text-color;
     text-decoration: underline;
-    text-underline-position: under;
   }
 
   .social-media-list &:hover {
@@ -212,7 +206,6 @@ pre {
 /**
  * Icons
  */
-
 .svg-icon {
     width: 3rem;
     height: 3rem;

@@ -52,6 +52,7 @@ body {
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
+  text-underline-position: under;
 
   &,
   &:visited {
@@ -78,6 +79,7 @@ body {
   }
 
   .page-link {
+    text-underline-position: under;
     color: $primary-color;
     line-height: $base-line-height;
     @include relative-font-size(1.2);
@@ -150,6 +152,57 @@ body {
   overflow-y: auto;
 }
 
+/**
+ * whoami
+ */
+.whoami {
+  margin: 15rem;
+  padding: 0;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.4;
+
+  @include media-query($on-palm) {
+    margin: 15rem;
+  }
+}
+
+.whoami-content {
+  // font-family: "Gotham SSm A","Gotham SSm B", Montserrat, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+
+  @include media-query($on-palm) {
+    font-size: 0.5em;
+  }
+}
+
+#hello-there {
+  font-weight: 600;
+}
+
+#typed {
+  font-size: 2em;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+
+
+/**
+ * blog
+ */
+.blog {
+  margin: 2rem;
+  flex: 1;
+  padding-top: 3%;
+  padding-right: 25%;
+  padding-left: 25%;
+
+  @include media-query($on-laptop) {
+    padding: $spacing-unit 0;
+  }
+}
 
 /**
  * Site footer
