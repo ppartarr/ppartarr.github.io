@@ -1,0 +1,29 @@
+/**
+ * blog
+ */
+ .blog {
+  margin: 2rem;
+  flex: 1;
+  padding-top: 3%;
+  padding-right: 25%;
+  padding-left: 25%;
+
+  @include media-query($on-laptop) {
+    padding: $spacing-unit 0;
+  }
+}
+
+/**
+* post layout
+*/
+.post {
+  margin: 2rem;
+  flex: 1;
+  padding-top: 3%;
+  padding-right: 25%;
+  padding-left: 25%;
+
+  @include media-query($on-laptop) {
+    padding: $spacing-unit 0;
+  }
+}
