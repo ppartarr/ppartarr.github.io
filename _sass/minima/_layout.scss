@@ -146,24 +146,6 @@ body {
 }
 
 /**
- * Post
- */
-.post {
-  overflow-y: auto;
-}
-
-#hello-there {
-  font-weight: 600;
-}
-
-#typed {
-  font-size: 2em;
-  font-weight: 500;
-  letter-spacing: -0.04em;
-  line-height: 1.2;
-}
-
-/**
  * Site footer
  */
 .site-footer {
@@ -244,6 +226,20 @@ body {
   }
 }
 
+#hello-there {
+  font-weight: 600;
+}
+
+#typed {
+  // display: flex;
+  // justify-content: center;
+  // flex-direction: column;
+  font-size: 2em;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.2;
+}
+
 /**
  * Centering
  */
@@ -281,72 +277,14 @@ body {
   @include relative-font-size(2);
 }
 
-.post-list-heading {
-  @include relative-font-size(1.75);
-}
 
-.post-list {
-  margin-left: 0;
-  list-style: none;
+// /**
+// * highlighted text
+// */
+// ::selection {
+//   background: #B9BECA;
+// }
 
-  > li {
-    margin-bottom: $spacing-unit;
-  }
-}
-
-.post-meta {
-  font-size: $small-font-size;
-  color: $primary-color;
-}
-
-.post-link {
-  display: block;
-  @include relative-font-size(1.5);
-}
-
-
-
-/**
- * Posts
- */
-.post-header {
-  margin-bottom: $spacing-unit;
-}
-
-.post-title {
-  @include relative-font-size(2.625);
-  letter-spacing: -1px;
-  line-height: 1;
-
-  @include media-query($on-laptop) {
-    @include relative-font-size(2.25);
-  }
-}
-
-.post-content {
-  margin-bottom: $spacing-unit;
-
-  h2 {
-    @include relative-font-size(2);
-
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.75);
-    }
-  }
-
-  h3 {
-    @include relative-font-size(1.625);
-
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.375);
-    }
-  }
-
-  h4 {
-    @include relative-font-size(1.25);
-
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.125);
-    }
-  }
-}
+// ::-moz-selection {
+//   background: $grey-color;
+// }
