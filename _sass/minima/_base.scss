@@ -111,6 +111,7 @@ a {
   }
 
   &:hover {
+    cursor: url('images/right32.png') 32 16, auto;
     text-decoration: underline;
   }
 
