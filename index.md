@@ -7,14 +7,17 @@ isHome: true
 
 <div class="home">
 
-  <h1 class="centered large-text">
-      <div id="typed-strings"></div>
-      <span id="typed"></span>
+  <h1 class="large-text centered">
+      Hi, I'm a <span id="typed"></span>
   </h1>
 
   <script>
       var typed = new Typed('#typed', {
-        strings: ["Hi, I'm a software engineer 👋", "Hire me to translate your ideas into code!"],
+        strings: [
+          "developer",
+          "student",
+          "hacker"
+        ],
         smartBackspace: true,
         typeSpeed: 50,
         backSpeed: 30,

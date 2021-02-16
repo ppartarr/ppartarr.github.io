@@ -83,7 +83,7 @@ body {
     text-underline-position: under;
     color: $primary-color;
     line-height: $base-line-height;
-    @include relative-font-size(1.2);
+    @include relative-font-size(1.5);
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
@@ -217,28 +217,20 @@ body {
 }
 
 .large-text {
-  @include relative-font-size(4);
+  @include relative-font-size(11);
   font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.2;
 }
 
 @include media-query($on-palm) {
   .large-text {
-    @include relative-font-size(1);
+    @include relative-font-size(5);
   }
 }
 
 #hello-there {
   font-weight: 600;
-}
-
-#typed {
-  // display: flex;
-  // justify-content: center;
-  // flex-direction: column;
-  font-size: 2em;
-  font-weight: 500;
-  letter-spacing: -0.04em;
-  line-height: 1.2;
 }
 
 /**
