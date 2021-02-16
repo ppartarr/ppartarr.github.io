@@ -7,8 +7,20 @@ body {
   cursor: url('images/cursor-colour.png'), auto;
 }
 
+// link cursor
 a:hover {
   cursor: url('images/right32.png') 32 16, auto;
+}
+
+// selection
+::-moz-selection { /* Code for Firefox */
+  color: $background-color;
+  background: $text-color;
+}
+
+::selection {
+  color: $background-color;
+  background: $text-color;
 }
 
 /**
