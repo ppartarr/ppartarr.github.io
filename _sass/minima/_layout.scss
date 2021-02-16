@@ -241,18 +241,18 @@ a:hover {
  * Centering
  */
 .centered {
-  margin: 0;
-  position: absolute;
-  top: 45%;
-  left: 20%;
-  transform: translate(0, -50%);
-  max-width: 70%;
-  max-block-size: 1em;
+  margin: auto;
+  position: relative;
+  margin-top: 10%;
+  // margin-top: calc(100% - 2em);
+  // transform: translate(0, -50%);
+  max-width: 80%;
+  // max-block-size: 1em;
 
-  @include media-query($on-palm) {
-    left: 20%;
-    max-width: 60%;
-  }
+  // @include media-query($on-palm) {
+  //   // left: 20%;
+  //   max-width: 60%;
+  // }
 }
 
 /**
