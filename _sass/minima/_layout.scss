@@ -4,7 +4,11 @@
 body {
   max-height: 100vh;
   max-width: 100%;
-  cursor: url('images/favicon-32x32.png'), auto
+  cursor: url('images/cursor-colour.png'), auto;
+}
+
+a:hover {
+  cursor: url('images/right32.png') 32 16, auto;
 }
 
 /**
