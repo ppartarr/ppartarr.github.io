@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Audio Steganography: a Deep Learning Approach"
+title: "Audio Steganography: a Deep Learning Approach 🗣️"
 date: 2021-02-15 23:00:010 +0200
 categories: research
 ---
 
-As part of the Cyber Crime & Forensics course at the University of Amsterdam,  [Davide Pucci](https://www.davidepucci.it/) and I worked on building a neural network designed to embed a hidden audio message into a cover message in a way that is indistinguishable to the human ear.
+As part of the Cyber Crime & Forensics course at the [Security and Network Engineering Masters @ University of Amsterdam](https://www.os3.nl),  [Davide Pucci](https://www.davidepucci.it/) and I worked on building a neural network designed to embed a hidden audio message into a cover message in a way that is indistinguishable to the human ear.
 
 <img src="/assets/images/neuralNetwork.png" style="background: #FFE5DA">
 
