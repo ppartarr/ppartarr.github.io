@@ -18,7 +18,7 @@ To modify the default [minima](https://github.com/jekyll/minima) template, run `
 If you change any default values in **_layouts** you must run `bundle update`
 
 ## Font & Icon attribution
-<div>Icons made by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+Some icons are made by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
 
 ### Changing image colour
 ```bash
