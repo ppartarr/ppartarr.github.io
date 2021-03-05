@@ -37,6 +37,8 @@ Let's begin by doing some wiping. In Windows 10 launch the **Disk Management** t
 
 I recommend you use [Etcher](https://www.balena.io/etcher/) but you can also use [Rufus](https://rufus.ie/). Simply download the tool, plug in your USB and flash it with the .iso.
 
+*Note: I recommend that you keep the .iso installed on the USB key. You might need it after completing the setup since Windows updates may overwrite your boot partition (see FAQ for more info)*
+
 ### Disable Fast Boot & Secure Boot & optionally switch from RAID to AHCI
 
 This may sound dumb but trust me on this one: since you'll be restarting your computer, read all the steps in this section before following through:
