@@ -14,8 +14,6 @@ So what are we going to install? Starting from the ground up, we have:
 * Terminal emulator: [rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html)
 * Shell: [zsh](https://www.zsh.org/)
 
-And lots, lots more stuff. As a rule of thumb: if you're not familiar with a package name and you're about to install it, do an online search beforehand. Please keep in mind that this tutorial is highly biased: **This is my setup and I hand-picked all of these tools**
-
 Here's what you can expect your desktop to look like if you follow this tutorial (you can customise everything from the background picture, the transparency, the text colour scheme, to the status bar and much much more):
 
 ![screenshot](/assets/images/screenshot.png)

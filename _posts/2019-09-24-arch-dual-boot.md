@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Dual boooting arch linux & windows 10"
+title:  "Dual boooting Arch linux & windows 10"
 date:   2019-09-24 23:09:010 +0200
 categories: blog
 ---
 
-There are already dozens of tutorials to setup an arch and Windows dual boot - welcome to a dozen + 1. Like most others this is a step by step guide. Unlike most others the steps are ordered in a way that makes sense (starting with the download first - duh!) so you won't have to restart your computer a gazillion times.
+There are already dozens of tutorials to setup an Arch and Windows dual boot - welcome to a dozen + 1. Like most others this is a step by step guide. Unlike most others the steps are ordered in a way that makes sense (starting with the download first - duh!) so you won't have to restart your computer a gazillion times.
 
-I did this on a single SSD Dell XPS 15 with windows 10 preinstalled. It's obviously possible to follow this guide if you're installing arch onto a different drive or if you're running older hardware. If you run into any problems please be sure to read through the [Arch Installation Guide](https://wiki.archlinux.org/index.php/Installation_guide) and the [Arch Dual boot with Windows wiki](https://wiki.archlinux.org/index.php/Dual_boot_with_Windows). If those didn't help, try out [headspace](https://www.headspace.com/) before attempting to copy/paste commands from forums that looked like they were designed by a developer who thinks HTML is a pRoGrAmMiNg LaNgUaGe.
+I did this on a single SSD Dell XPS 15 with windows 10 preinstalled. It's obviously possible to follow this guide if you're installing Arch onto a different drive or if you're running older hardware. If you run into any problems please be sure to read through the [Arch Installation Guide](https://wiki.archlinux.org/index.php/Installation_guide) and the [Arch Dual boot with Windows wiki](https://wiki.archlinux.org/index.php/Dual_boot_with_Windows).
 
 To get started you will need:
   * a stable internet connection
@@ -16,7 +16,7 @@ To get started you will need:
 
 ## Warmup
 
-### Download the arch image
+### Download the Arch image
 Let's begin by [downloading the .iso](https://www.archlinux.org/download/) preferably using BitTorrent and verifying the checksum [1].
 
 ### Check the partition table type in Windows 
@@ -37,17 +37,17 @@ Let's begin by doing some wiping. In Windows 10 launch the **Disk Management** t
 
 I recommend you use [Etcher](https://www.balena.io/etcher/) but you can also use [Rufus](https://rufus.ie/). Simply download the tool, plug in your USB and flash it with the .iso.
 
-### Disable Fast Boot & Secure Boot & opionally switch from RAID to AHCI
+### Disable Fast Boot & Secure Boot & optionally switch from RAID to AHCI
 
 This may sound dumb but trust me on this one: since you'll be restarting your computer, read all the steps in this section before following through:
   1. do an online search using you're favourite search engine to lookup what key to press during boot to enter the UEFI settings
   2. restart your computer and press it
   3. the UEFI interface varies depending on your motherboard but they shouldn't be too hard to find:
      1. disable Fast Boot
-     2. diable Secure Boot
+     2. disable Secure Boot
      3. change the boot order to prioritise your USB over the Windows Boot Loader
      4. (optional) if you have problems partioning your disk switch from RAID to AHCI
-  4. save & exit & restart your computer & drop into the arch root prompt (yay!)
+  4. save & exit & restart your computer & drop into the Arch root prompt!
 
 ## Fun stuff
 
@@ -93,7 +93,7 @@ n                    # create a new partition
 +256MB               # or whatever size you want your swap to be
 t                    # change the partition type
 <Enter>              # use default partition
-19                   # change partition type to Linux swap
+83                   # use Linux swap partition type
 
 n                    # create a new partition
 <Enter>              # use default partition number
@@ -101,6 +101,7 @@ n                    # create a new partition
 <Enter>              # fill the rest of the disk
 t                    # change the partition type
 <Enter>              # use default partition
+82                   # use Linux partition type
 w                    # write the changes to disk & exit
 ```
 
@@ -122,21 +123,24 @@ nvme0n1     259:0    0   477G  0 disk
 
 ### Prepare your swap & boot partitions
 ``` bash
-# enable your swap
+# create & enable your swap
+$ mkswap /dev/nvme0n1p8
 $ swapon /dev/nvme0n1p8
 
-# mount & format your boot & root partitions
-$ mount /dev/nvme0n1p9 /mnt
-$ mount /dev/nvme0n1p7 /mnt/boot
+# format the partitions
 $ mkfs.ext4 /dev/nvme0n1p9
 $ mkfs.ext4 /dev/nvme0n1p7
+
+# mount the partitions
+$ mount /dev/nvme0n1p9 /mnt
+$ mount /dev/nvme0n1p7 /mnt/boot
 
 # mount your UEFI boot partition
 $ mkdir /mnt/boot/efi
 $ mount /dev/nvme0n1p1 /mnt/boot/efi
 ```
 
-### Install the base arch packages
+### Install the base Arch packages
 ``` bash
 # optionally add base-devel at the end of the following command for development tools
 $ pacstrap /mnt base linux linux-firmware
@@ -243,14 +247,24 @@ $ reboot
 ```
 
 ## Next steps
-There are so many different ways forward from here but I recommend following the [arch general recommendations](https://wiki.archlinux.org/index.php/General_recommendations) to secure your system by doing some system administration before you move on to more exciting stuff. If you want to dive into the rabbit hole you should have a look at [i3](https://i3wm.org/). A good guide to get started is this [i3 installation, configuration & operation post](https://medium.com/@mudrii/arch-linux-installation-on-hw-with-i3-windows-manager-part-2-x-window-system-and-i3-installation-86735e55a0a0). I plan on releasing my own i3 setup guide sometime in the near future.
+There are so many different ways forward from here but I recommend following the [arch general recommendations](https://wiki.archlinux.org/index.php/General_recommendations) to secure your system by doing some system administration before you move on to more exciting stuff. If you want to dive into the rabbit hole you should have a look at [i3](https://i3wm.org/).You can find my [arch + i3 setup guide here](https://www.partarrieu.me/blog/2019/10/18/i3-arch-post-install.html). If run into any issues, have some question or want to help me improve this guide by leaving some feedback, [please do so here](https://gist.github.com/ppartarr/175aa0c3416daf3baacde17f442f80e1)!
 
-### Links & Credits
+## FAQ
+**Q: After a Windows update my computer boots directly to Windows instead of grub, how do I fix this?**
 
+Windows updates can sometimes mess with your boot partition. To fix this you will need a USB key with the Arch .iso on hand. It's quite simple to fix if you follow these steps.
+
+1. Plug-in the USB key with the Arch .iso
+1. Boot into BIOS settings and switch from RAID to AHCI
+2. Boot into Arch
+3. Reinstall grub by using [these commands](https://gist.github.com/ppartarr/0b4de0649e3d625d324a063248812f68)
+
+
+## Links
 [1] This is recommended to guarantee that the file you downloaded hasn't been tampered with. You shouldn't compare the checksum of the downloaded .iso with the checksum provided to you in the install since if the torrent or ftp server has been compromised it is likely both image and the checksum will have been modified. To verify the checksum, simply follow these steps:
   1. open a command line by running `Win key + R` and typing `cmd` and pressing enter
   2. run `certutil -hashfile C:\path\to\arch-linux.iso MD5` and compare the output to the MD5 checksum on the arch download page
 
 [2] As you can see in the output of `lsblk` I only allocated 1GB for my swap. Since then, I have upgraded this to 8GB. It is also possible to use a [swapfile](https://wiki.archlinux.org/index.php/Swap#Swap_file) instead of creating a swap partition.
 
-[3] Although [this guide](http://tech.memoryimprintstudio.com/dual-boot-installation-of-arch-linux-with-preinstalled-windows-10-with-encryption/) is for setting up an encrypted arch linux system it is clear & easy to follow
+[3] Although [this guide](http://tech.memoryimprintstudio.com/dual-boot-installation-of-arch-linux-with-preinstalled-windows-10-with-encryption/) is for setting up an encrypted Arch linux system it is clear & easy to follow
