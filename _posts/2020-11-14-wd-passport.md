@@ -25,7 +25,7 @@ Device     Start        End    Sectors  Size Type
 
 # mount the drive
 mkdir /mnt/wd-passport
-mount -t /dev/sda1 /mnt/wd-passport
+mount /dev/sda1 /mnt/wd-passport
 touch /mnt/wd-passport/file
 touch: cannot touch 'file': Read-only file system
 ```
