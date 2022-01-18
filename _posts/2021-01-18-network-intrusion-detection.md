@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Anomaly Based Network Intrusion Detection"
+title:  "Anomaly Based Network Intrusion Detection 🐛"
 date:   2022-01-18 21:09:010 +0200
 categories: blog
 ---
