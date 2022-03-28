@@ -90,7 +90,7 @@ This section is returning the correct solution for a given day, let's see if we 
 ```javascript
 var wordleStartDate = new Date(2021, 5, 19, 0, 0, 0, 0);
 
-function Ga(startDate, date) {
+function getDayOffset(startDate, date) {
     var s = new Date(startDate),
         t = new Date(date).setHours(0, 0, 0, 0) - s.setHours(0, 0, 0, 0);
     return Math.round(t / 864e5);
@@ -100,7 +100,7 @@ function getSolution(date) {
     return (index = offset % wordList.length), wordList[index];
 }
 function getDayOffset(date) {
-    return Ga(wordleStartDate, date);
+    return getDayOffset(wordleStartDate, date);
 }
 ```
 

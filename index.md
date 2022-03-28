@@ -14,9 +14,9 @@ isHome: true
   <script>
       var typed = new Typed('#typed', {
         strings: [
-          "developer",
-          "student",
-          "hacker"
+          "dev",
+          "hacker",
+          "tinkerer"
         ],
         smartBackspace: true,
         typeSpeed: 50,
