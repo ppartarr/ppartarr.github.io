@@ -52,10 +52,9 @@ var Ma = [
     ...,
     "swill",
     "tacit",
-    "other",
-    "thorn", // <= the solution to the day before yesterday's puzzle
-    "trove", // <= the solution to yesterday's puzzle
-    "bloke", // <= my guess is that this is the solution to today's puzzle?
+    "other", // <= the solution to the day before yesterday's puzzle
+    "thorn", // <= the solution to yesterday's puzzle
+    "trove", // <= my guess is that this is the solution to today's puzzle?
     ...
 ]
 ```
