@@ -9,7 +9,7 @@ I've been playing Wordle for the past week. I got curious and decided to dig int
 
 ## Initial discovery
 
-To kick off my search, I wanted to see if the [NYT wordle page](https://www.nytimes.com/games/wordle/index.html) was making any requests to a backend validation service. I imagined that a user would send a guess e.g. `hello` to a URL (let's say `https://www.nytimes.com/games/wordle/guess=hello`) and the backend would respond with an HTTP 200 OK containing True of False as a response body.
+To kick off my search, I wanted to see if the [NYT wordle page](https://www.nytimes.com/games/wordle/index.html) was making any requests to a backend validation service. I imagined that a user would send a guess e.g. `hello` to a URL (let's say `https://www.nytimes.com/games/wordle?guess=hello`) and the backend would respond with an HTTP 200 OK containing True of False as a response body.
 
 Before I could start digging for requests, I needed to turn the minified JavaScript into some readable code.
 
