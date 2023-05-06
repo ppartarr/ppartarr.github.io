@@ -102,8 +102,7 @@ So here's a quick breakdown of the tools we're about to install:
 
 ```bash
 # completely arbitrary list of stuff I use
-sudo pacman -S vim unzip tmux htop git zsh firefox chromium vlc libsecret gnome-keyring libgnome-keyring xclip zsh feh urxvt curl compton
-yay -S mailspring rofi i3lock-color polybar
+yay -Sy vim unzip tmux htop git zsh firefox chromium vlc libsecret gnome-keyring libgnome-keyring xclip zsh feh urxvt curl compton mailspring rofi i3lock-color polybar openssh
 ```
 
 ### Dotfiles

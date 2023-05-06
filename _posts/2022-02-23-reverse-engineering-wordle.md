@@ -60,7 +60,7 @@ var Ma = [
 ]
 ```
 
-I tried my luck, an lo and behold
+I tried my luck, an lo and behold (excuse the bad quality pic, I was super excited about the find so I hurriedly snapped a pic from my phone instead of taking a screeshot)
 
 ![wordle in 1](/assets/images/wordle-in-1.jpg)
 
