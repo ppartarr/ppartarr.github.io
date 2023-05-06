@@ -6,7 +6,7 @@ permalink: /whoami/
 
 # Hello there,
 
-I'm a software & security engineer. I work at [Minimax Labs](https://minimaxlabs.com). I also study [security & network engineering](https://www.os3.nl/) at the [University of Amsterdam](https://www.uva.nl/en).
+I'm a software & security engineer. I currently work at [Assetnote](https://assetnote.io/) as a Site Reliability Engineer. I studied [security & network engineering](https://www.os3.nl/) at the [University of Amsterdam](https://www.uva.nl/en).
 
 
 
