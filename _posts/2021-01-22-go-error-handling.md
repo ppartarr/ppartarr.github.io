@@ -13,6 +13,8 @@ if err != nil {
 }
 ```
 
+<!--more-->
+
 Although I could use some syntactic sugar to make a one-liner I figured it would be much more fun to have a keyboard binding that simpy inputs the error handling text.
 
 My solution for this is [keypress](https://github.com/ppartarr/keypress).

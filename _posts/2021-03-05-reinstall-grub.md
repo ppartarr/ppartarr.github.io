@@ -7,6 +7,8 @@ categories: blog
 
 When running a dual boot Arch + Windows setup, Windows updates can sometimes mess with your boot partition. Rather than booting directly into grub, Windows will override your /boot partition and you will be left without a grub.cfg. Due to this, you will boot directly into windows. Luckily there is a simple fix for this.
 
+<!--more-->
+
 You will need a USB key with the Arch .iso on hand. If you don't have one simply follow the steps from **Download the Arch image** & **Create a bootable USB with Arch** in [my previous guide](https://www.partarrieu.me/blog/2019/09/24/arch-dual-boot.html). Once you have it simply follow these steps:
 
 1. Plug-in the USB key with the Arch .iso

@@ -7,6 +7,8 @@ categories: blog
 
 I've been playing Wordle for the past week. I got curious and decided to dig into the source code. My goal was to find out how guesses are validated - and it turns out to be designed in a strange way.
 
+<!--more-->
+
 ## Initial discovery
 
 To kick off my search, I wanted to see if the [NYT wordle page](https://www.nytimes.com/games/wordle/index.html) was making any requests to a backend validation service. I imagined that a user would send a guess e.g. `hello` to a URL (let's say `https://www.nytimes.com/games/wordle?guess=hello`) and the backend would respond with an HTTP 200 OK containing True of False as a response body.

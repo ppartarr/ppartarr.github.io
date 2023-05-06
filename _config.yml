@@ -34,6 +34,7 @@ google_analytics: UA-108015659-2
 
 # Show teaser blog post text
 show_excerpts: true
+excerpt_separator: <!--more-->
 
 # Build settings
 theme: minima

@@ -8,6 +8,8 @@ categories: blog
 
 I recently setup a new desktop with an encrypted Arch disk. This is a slightly modified version of my [Arch/Windows dual-boot guide](https://www.partarrieu.me/blog/2019/09/24/arch-dual-boot.html) with additional steps to encrypt the root partition. I removed the fluff and kept the key parts of the installation. If you run into any problems please be sure to read through the [Arch Installation guide](https://wiki.archlinux.org/index.php/Installation_guide) and the [dm-crypt guide](https://wiki.archlinux.org/title/Dm-crypt/Encrypting_an_entire_system)
 
+<!--more-->
+
 This guide is for HDD disks and a motherboard supporting UEFI.
 
 ## Let's get started!

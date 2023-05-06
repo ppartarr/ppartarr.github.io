@@ -7,6 +7,8 @@ categories: blog
 
 There are already dozens of tutorials to setup an Arch and Windows dual boot - welcome to a dozen + 1. Like most others this is a step by step guide. Unlike most others the steps are ordered in a way that makes sense (starting with the download first - duh!) so you won't have to restart your computer a gazillion times.
 
+<!--more-->
+
 I did this on a single SSD Dell XPS 15 with windows 10 preinstalled. It's obviously possible to follow this guide if you're installing Arch onto a different drive or if you're running older hardware. If you run into any problems please be sure to read through the [Arch Installation Guide](https://wiki.archlinux.org/index.php/Installation_guide) and the [Arch Dual boot with Windows wiki](https://wiki.archlinux.org/index.php/Dual_boot_with_Windows).
 
 To get started you will need:

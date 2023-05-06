@@ -9,6 +9,8 @@ categories: blog
 
 As part of the Research Project 2 course at the [Security and Network Engineering Masters @ University of Amsterdam](https://www.os3.nl),  [Philipp Mieden](https://dreadl0ck.net/) and I worked on comparing various ML techniques for network intrusion detection.
 
+<!--more-->
+
 ## Abstract
 We develop and evaluate a pipeline for extracting and analysing observations from network traffic, using state of the art machine learning and deep learning algorithms to recognise malicious patterns in network communication, without the need for static detection rules.
 The evaluation is conducted on the CIC-IDS-2018 dataset, a modern and large scale scenario that includes multiple common attack classes inside a multi-department corporate network infrastructure hosted on AWS.

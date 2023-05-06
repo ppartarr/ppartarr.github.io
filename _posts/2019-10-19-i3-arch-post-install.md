@@ -7,6 +7,8 @@ categories: blog
 
 So you've spent a couple of hours installing arch and you finally have access to a shell. What more could you want? Probably a [desktop environment](https://wiki.archlinux.org/index.php/Desktop_environment) like gnome or cinnamon. If you want to try something new and exciting why not go for a [window manager](https://wiki.archlinux.org/index.php/Window_manager)? It's much more efficient in terms of system resources, and once you've ~~spent some time~~ wasted days customising your configuration files you'll have a desktop worthy of [unixporn](https://www.reddit.com/r/unixporn/). What are you waiting for? Go have a look at [i3](https://i3wm.org/) for a bit more info about and come back when you're convinced this is the right thing for you do to.
 
+<!--more-->
+
 If you're coming into i3 & arch for the first time, a lot of these tools are going to sound new. Once again, if you don't know what the tool is used for, don't bother installing it. You probably won't use it and it'll end up being bloatware.
 
 So what are we going to install? Starting from the ground up, we have:

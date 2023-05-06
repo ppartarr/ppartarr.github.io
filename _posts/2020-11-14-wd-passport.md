@@ -30,6 +30,8 @@ touch /mnt/wd-passport/file
 touch: cannot touch 'file': Read-only file system
 ```
 
+<!--more-->
+
 Frustratingly, the [product page](https://shop.westerndigital.com/products/portable-drives/wd-my-passport-usb-3-0-hdd#WDBYVG0020BBK-WESN) says the drive is compatible with:
 > Windows® 10 or Windows 8.1 operating systems. Requires reformatting for other operating systems.
 

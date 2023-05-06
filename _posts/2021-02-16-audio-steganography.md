@@ -7,6 +7,8 @@ categories: research
 
 As part of the Cyber Crime & Forensics course at the [Security and Network Engineering Masters @ University of Amsterdam](https://www.os3.nl),  [Davide Pucci](https://www.davidepucci.it/) and I worked on building a neural network designed to embed a hidden audio message into a cover message in a way that is indistinguishable to the human ear.
 
+<!--more-->
+
 <img src="/assets/images/neuralNetwork.png" style="background: #FFE5DA">
 
 ## Abstract
