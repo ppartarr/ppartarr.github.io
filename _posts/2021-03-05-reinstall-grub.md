@@ -22,6 +22,7 @@ You will need a USB key with the Arch .iso on hand. If you don't have one simply
 # mount the boot partition
 mount /dev/nvme0n1p9 /mnt
 mount /dev/nvme0n1p7 /mnt/boot
+mount /dev/nvme0n1p1 /mnt/boot/efi
 
 # change root to /mnt partition
 arch-chroot /mnt
